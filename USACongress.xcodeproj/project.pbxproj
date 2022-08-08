@@ -13,8 +13,10 @@
 		D51C796E28A14C5900B9AA07 /* Senate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51C796728A14C5900B9AA07 /* Senate.swift */; };
 		D51C796F28A14C5900B9AA07 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51C796928A14C5900B9AA07 /* ViewModel.swift */; };
 		D51C797028A14C5900B9AA07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51C796A28A14C5900B9AA07 /* ContentView.swift */; };
-		D51C797128A14C5900B9AA07 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51C796C28A14C5900B9AA07 /* HomeView.swift */; };
+		D51C797128A14C5900B9AA07 /* CongressListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51C796C28A14C5900B9AA07 /* CongressListView.swift */; };
 		D51C797228A14C5900B9AA07 /* CongressImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51C796D28A14C5900B9AA07 /* CongressImageView.swift */; };
+		D5FEC63E28A16DCD00429CC4 /* CongressDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FEC63D28A16DCD00429CC4 /* CongressDetailView.swift */; };
+		D5FEC64028A170C000429CC4 /* CongressRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FEC63F28A170C000429CC4 /* CongressRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +27,10 @@
 		D51C796728A14C5900B9AA07 /* Senate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Senate.swift; sourceTree = "<group>"; };
 		D51C796928A14C5900B9AA07 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		D51C796A28A14C5900B9AA07 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D51C796C28A14C5900B9AA07 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D51C796C28A14C5900B9AA07 /* CongressListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CongressListView.swift; sourceTree = "<group>"; };
 		D51C796D28A14C5900B9AA07 /* CongressImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CongressImageView.swift; sourceTree = "<group>"; };
+		D5FEC63D28A16DCD00429CC4 /* CongressDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongressDetailView.swift; sourceTree = "<group>"; };
+		D5FEC63F28A170C000429CC4 /* CongressRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongressRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,10 @@
 		D51C796B28A14C5900B9AA07 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D51C796C28A14C5900B9AA07 /* HomeView.swift */,
+				D51C796C28A14C5900B9AA07 /* CongressListView.swift */,
+				D5FEC63F28A170C000429CC4 /* CongressRowView.swift */,
 				D51C796D28A14C5900B9AA07 /* CongressImageView.swift */,
+				D5FEC63D28A16DCD00429CC4 /* CongressDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -177,8 +183,10 @@
 				D51C795928A14C2300B9AA07 /* USACongressApp.swift in Sources */,
 				D51C796F28A14C5900B9AA07 /* ViewModel.swift in Sources */,
 				D51C797028A14C5900B9AA07 /* ContentView.swift in Sources */,
-				D51C797128A14C5900B9AA07 /* HomeView.swift in Sources */,
+				D51C797128A14C5900B9AA07 /* CongressListView.swift in Sources */,
+				D5FEC63E28A16DCD00429CC4 /* CongressDetailView.swift in Sources */,
 				D51C796E28A14C5900B9AA07 /* Senate.swift in Sources */,
+				D5FEC64028A170C000429CC4 /* CongressRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
