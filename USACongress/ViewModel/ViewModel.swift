@@ -21,18 +21,14 @@ class ViewModel: ObservableObject {
 
         let url = URL(string: apistring)!
         var request = URLRequest(url: url)
-        //request.httpMethod = "GET" //doc says its the default
         request.allHTTPHeaderFields = fields
 
-        URLSession.shared.dataTask(with: request) { dat, res, err in
+        URLSession.shared.dataTask(with: request) { data, res, err in
             let jsondecoder = JSONDecoder()
             if let err = err {
                 print(err)
             }
-            if let data = dat, let str = String(data: data, encoding: .utf8) {
-                print("-------Start-------")
-                print(str)
-                print("-----END-----")
+            if let data = data {
                 do {
                     let query = try jsondecoder.decode(CongressApiQuery.self, from: data)
                     

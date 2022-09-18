@@ -14,23 +14,26 @@ struct CongressListView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                ForEach(viewModel.members) { member in
-                    NavigationLink {
-                        CongressDetailView(member: member)
-                    } label: {
-                        CongressRowView(member: member)
-                        .frame(maxWidth: .infinity)
-                        .padding()
+                VStack {
+                    ForEach(viewModel.members) { member in
+                        NavigationLink {
+                            CongressDetailView(member: member)
+                        } label: {
+                            CongressRowView(member: member)
+                                .frame(maxWidth: .infinity)
+                                .padding()
+                        }
+                        
+                        
                     }
-
-                    
                 }
+                
             }
             .navigationTitle("Senators")
         }
-            .onAppear {
-                viewModel.fetch()
-            }
+        .onAppear {
+            viewModel.fetch()
+        }
     }
 }
 
